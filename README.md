@@ -47,3 +47,21 @@ Build failed: branch2
   - after building the app - ```npm run start ```
 
 That's it! 
+
+# What can be improved later
+### Staging
+```
+Build in queue: branch1
+
+Build in queue: branch2
+
+Build in progress: branch1
+
+```
+### Displaying build time
+```
+Build time: 1 min 10 sec
+
+```
+### Thought-out exception handling
+### Automated testing
