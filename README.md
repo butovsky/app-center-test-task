@@ -38,7 +38,7 @@ Build failed: branch2
   npm -v
   ```
   - open project folder in your terminal and enter ```npm i``` to install all the necessary packages
-  - copy env.template and create your own .env file based on it.
+  - copy env.example file and create your own .env file based on it.
   --------------
   #### You need to provide USER (your account' nickname in App Center), APP (name of the app you want to build) and TOKEN (App Center User token OR the App token of the chosen app) variables in order to make script work
   ###### You can test the workability using already provided env variables - one branch always builds successfully, while other is completely empty
