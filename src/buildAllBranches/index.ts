@@ -11,7 +11,7 @@ export class BuildAllBranches {
         this.branchObjects = await GetBranches.execute();
         for (let index in this.branchObjects) {
             await StartBuild.execute(this.branchObjects[index].branch.name).catch(err => console.log(err));
-            this.timers.push(setInterval(async() => await CheckBuild.execute(this.branchObjects[index].branch.name, this.timers[index]), this.interval));
+            this.timers.push(setInterval(() => CheckBuild.execute(this.branchObjects[index].branch.name, this.timers[index]), this.interval));
         };
     };
 };
