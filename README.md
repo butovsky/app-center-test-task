@@ -30,6 +30,28 @@ Build failed: branch2
  ```
  etc
  
+ ## Exception handling and retry logic
+ 
+```
+Error: Unknown error (HTTP code 4xx/5xx) occured on fetch. Please check your credentials and API workability
+    at /home/haseldev/consoleApp/dist/buildAllBranches/components/getBranches.js:15:23
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.execute (/home/haseldev/consoleApp/dist/buildAllBranches/components/getBranches.js:8:9)
+Retry attempt: 2 of 3
+
+Error: Unknown error (HTTP code 4xx/5xx) occured on fetch. Please check your credentials and API workability
+    at /home/haseldev/consoleApp/dist/buildAllBranches/components/getBranches.js:15:23
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.execute (/home/haseldev/consoleApp/dist/buildAllBranches/components/getBranches.js:8:9)
+Retry attempt: 3 of 3
+
+Error: Unknown error (HTTP code 4xx/5xx) occured on fetch. Please check your credentials and API workability
+    at /home/haseldev/consoleApp/dist/buildAllBranches/components/getBranches.js:15:23
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Function.execute (/home/haseldev/consoleApp/dist/buildAllBranches/components/getBranches.js:8:9)
+Error can't be resolved after all the retries. Please fix it in order to make script work probably.
+```
+ 
  # How to set up
  - Clone the repository to your local machine
  - Make sure that NPM and Node.js are installed on your computer:
@@ -63,5 +85,4 @@ Build in progress: branch1
 Build time: 1 min 10 sec
 
 ```
-### Thought-out exception handling
 ### Automated testing
